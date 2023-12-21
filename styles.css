@@ -121,4 +121,10 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
+
+
+}
+
+.out-4>img {
+    max-height: 500px;
 }
