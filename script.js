@@ -26,8 +26,23 @@ async function f () {
     document.querySelector('.tempfeel').innerHTML = 'feels like: ' + Math.round(data.main.feels_like) + '&deg;C';
     
     
+    let res = document.querySelector('.out-4');
+    let d = Math.round(data.main.temp);
 
+    if (d >= 5 && d <= 8) {
+        res.innerHTML = 'good weather to run';
+    } else if (d >= 0 && d <= 4) {
+        res.innerHTML = 'normal weather to run';
     }
+}
+
+
+// let res = document.querySelector('.airtemp');
+
+    
+
+
+
 
 
 

@@ -1,5 +1,6 @@
 body {
     background: rgb(223, 255, 251);
+
 }
 
 h1 {
@@ -114,4 +115,10 @@ p {
 .w_descr,
 .wind {
     font-size: 80%;
+}
+
+.out-4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
