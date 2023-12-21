@@ -1,5 +1,8 @@
 body {
     background: rgb(223, 255, 251);
+    border-radius: 8%;
+
+
 
 }
 
@@ -16,11 +19,12 @@ h1 {
     position: absolute;
     left: 43%; */
 
-    /* margin: 0 auto;
-    display: block; */
+    margin: 0 auto;
 
-    position: absolute;
-    left: 47.3%;
+    display: block;
+
+    /* position: absolute;
+    left: 47.5%; */
 
 
 
@@ -50,7 +54,8 @@ h1 {
     justify-content: center;
     display: flex;
     flex-direction: row;
-    margin-top: 60px;
+    margin-top: 10px;
+    /* margin-top: 60px; */
 
 }
 
@@ -62,8 +67,10 @@ h1 {
 .out-2,
 .w_icon,
 .out-3 {
-    max-height: 110px;
-    max-width: fit-content;
+    max-height: 107px;
+    max-width: 130px;
+    width: 105px;
+    /* max-width: fit-content; */
     background:
         linear-gradient(25deg, rgba(6, 193, 255, 0.7) 39%, rgb(39, 42, 83) 96%) center center / 400px 300px, rgb(88, 195, 231);
 }
@@ -119,12 +126,13 @@ p {
 
 .out-4 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    right: 5%;
 
 
 }
 
 .out-4>img {
     max-height: 500px;
+    border-radius: 8%;
 }

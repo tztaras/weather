@@ -6,14 +6,16 @@
 
 document.querySelector('.button').onclick = f;
 async function f () {
-    // let a = document.querySelectorAll('.container .out-4');
-    // a.forEach( (aa)=> {
-    //     aa.classList.toggle('hide');
-    // });
-    let a = document.querySelector('.container');
-    a.classList.toggle('hide');
+  
+  
+
+    let res = document.querySelector('.out-4');
+   
     
-    
+    let a = document.querySelectorAll('.container, .out-4');
+    a.forEach(aa => {
+        aa.classList.toggle('hide');
+    })
 
     let b = await fetch('https://api.openweathermap.org/data/2.5/weather?id=687021&appid=d41328ff78cb8042706bf7398821ba7d&temp=cel&units=metric');
     console.log(b);
@@ -32,13 +34,18 @@ async function f () {
     document.querySelector('.tempfeel').innerHTML = 'feels like: ' + Math.round(data.main.feels_like) + '&deg;C';
     
     
-    let res = document.querySelector('.out-4');
+   
     let d = Math.round(data.main.temp);
-
-    if (d >= 5 && d <= 8) {
-        res.innerHTML = `good weather to run <img src='./img/5to8.jpg'>`;
+    if (d > 8) {
+        res.innerHTML = `<img src='./img/above8.jpg'>`;
+    } else if (d >= 5 && d <= 8) {
+        res.innerHTML = `<img src='./img/5to8.jpg'>`;
     } else if (d >= 0 && d <= 4) {
-        res.innerHTML = `normal weather to run <img src='./img/0to4.jpg'>`;
+        res.innerHTML = `<img src='./img/0to4.jpg'>`;
+    } else if (d >= -6 && d <= -1) {
+        res.innerHTML = `<img src='./img/-1to-6.jpg'>`;
+    } else if (d <= -6) {
+        res.innerHTML = `<img src='./img/below-6.jpg`;
     }
 }
 
