@@ -68,7 +68,7 @@ h1 {
 .w_icon,
 .out-3 {
     max-height: 107px;
-    max-width: 130px;
+    /* max-width: 130px; */
     width: 105px;
     /* max-width: fit-content; */
     background:
@@ -79,6 +79,13 @@ h1 {
 .out-2 {
     border-top: 1px solid green;
     border-bottom: 1px solid green;
+    /* align-items: center;
+    justify-content: center; */
+    display: flex;
+    align-items: center;
+    /* Vertical centering */
+    /* justify-content: center; */
+
 }
 
 .out-1 {
