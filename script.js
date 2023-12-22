@@ -10,6 +10,7 @@ async function f () {
   
 
     let res = document.querySelector('.out-4');
+    let cat = document.querySelector('.out-5');
    
     
     let a = document.querySelectorAll('.container, .out-4');
@@ -35,19 +36,26 @@ async function f () {
     
     
    
-    let d = Math.round(data.main.temp);
-    if (d > 8) {
+    let t = Math.round(data.main.temp);
+    if (t > 8) {
         res.innerHTML = `<img src='./img/above8.jpg'>`;
-    } else if (d >= 5 && d <= 8) {
+    } else if (t >= 5 && t <= 8) {
         res.innerHTML = `<img src='./img/5to8.jpg'>`;
-    } else if (d >= 0 && d <= 4) {
+    } else if (t >= 0 && t <= 4) {
         res.innerHTML = `<img src='./img/0to4.jpg'>`;
-    } else if (d >= -6 && d <= -1) {
+    } else if (t >= -6 && t <= -1) {
         res.innerHTML = `<img src='./img/-1to-6.jpg'>`;
-    } else if (d <= -6) {
+    } else if (t <= -6) {
         res.innerHTML = `<img src='./img/below-6.jpg`;
     }
+
+    let wd = data.weather[0].description;
+    if (wd = 'light rain') {
+        cat.innerHTML = `what a weather for a run!)`;
+    }
 }
+
+
 
 
 // let res = document.querySelector('.airtemp');
