@@ -51,7 +51,7 @@ async function f () {
 
     let wd = data.weather[0].description;
     if (wd = 'light rain') {
-        cat.innerHTML = `what a weather for a run!)`;
+        cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather)))</p>`;
     }
 }
 
