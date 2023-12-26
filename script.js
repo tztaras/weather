@@ -13,7 +13,7 @@ async function f () {
     let cat = document.querySelector('.out-5');
    
     
-    let a = document.querySelectorAll('.container, .out-4');
+    let a = document.querySelectorAll('.container, .out-4, .out-5');
     a.forEach(aa => {
         aa.classList.toggle('hide');
     })
@@ -48,10 +48,12 @@ async function f () {
     } else if (t <= -6) {
         res.innerHTML = `<img src='./img/below-6.jpg`;
     }
-
     let wd = data.weather[0].description;
-    if (wd = 'light rain') {
+    if (wd === 'light rain') {
         cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather)))</p>`;
+    } else if (wd === 'overcast clouds') {
+        cat.innerHTML = `<p>bla bla bla</p>`;
+
     }
 }
 
