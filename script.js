@@ -15,8 +15,19 @@ async function f () {
     
     let a = document.querySelectorAll('.container, .out-4, .out-5');
     a.forEach(aa => {
+        
         aa.classList.toggle('hide');
+        
     })
+
+
+    setTimeout(() => {
+            cat.classList.toggle('show');
+    
+    }, 500)
+    
+    
+    
 
     let b = await fetch('https://api.openweathermap.org/data/2.5/weather?id=687021&appid=d41328ff78cb8042706bf7398821ba7d&temp=cel&units=metric');
     console.log(b);
