@@ -48,23 +48,41 @@ async function f () {
     
    
     let t = Math.round(data.main.temp);
+    let wd = data.weather[0].description;
+    // let wind = Math.round(data.wind.speed);
+    
+
+
     if (t > 8) {
         res.innerHTML = `<img src='./img/above8.jpg'>`;
-    } else if (t >= 5 && t <= 8) {
-        res.innerHTML = `<img src='./img/5to8.jpg'>`;
-    } else if (t >= 0 && t <= 4) {
-        res.innerHTML = `<img src='./img/0to4.jpg'>`;
-    } else if (t >= -6 && t <= -1) {
-        res.innerHTML = `<img src='./img/-1to-6.jpg'>`;
-    } else if (t <= -6) {
-        res.innerHTML = `<img src='./img/below-6.jpg`;
+    } 
+
+    else if (t >= 5 && t <= 8 && wd === 'overcast clouds') {
+        res.innerHTML = `<img src='./img/5to8brokenclouds.jpg'>`;
     }
-    let wd = data.weather[0].description;
+        else if (t >= 5 && t <= 8) {
+        res.innerHTML = `<img src='./img/5to8.jpg'>`;
+    }
+        
+    else if (t >= 0 && t <= 4) {
+        res.innerHTML = `<img src='./img/0to4.jpg'>`;
+    }
+    else if (t >= -6 && t <= -1) {
+        res.innerHTML = `<img src='./img/-1to-6.jpg'>`;
+    }
+    else if (t <= -6) {
+        res.innerHTML = `<img src='./img/below-6.jpg'>`;
+    }
+    
     if (wd === 'light rain') {
         cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather)))</p>`;
-    } else if (wd === 'overcast clouds') {
+    }
+    else if (wd === 'overcast clouds') {
         cat.innerHTML = `<p>bla bla bla</p>`;
 
+    }
+    else if (wd === 'clear sky' && t >= 0 && t <= 13) {
+        cat.innerHTML = `<img src='./img/cat-blue-sky.jpg'> <p>Great day to watch people run</p>`;
     }
 }
 
