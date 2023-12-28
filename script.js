@@ -84,6 +84,10 @@ async function f () {
     else if (wd === 'clear sky' && t >= 0 && t <= 13) {
         cat.innerHTML = `<img src='./img/cat-blue-sky.jpg'> <p>Great day to watch people run</p>`;
     }
+    else if (t >= -1 && t <= 4) {
+        cat.innerHTML = `<p> It is getting colder, cats settle down on heaters</p><img src='./img/cat-heater.jpg'> `;
+        
+    }
 }
 
 
