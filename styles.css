@@ -165,25 +165,45 @@ p {
     position: absolute;
     top: 60%;
     right: 5%;
+    animation-name: runner;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    transform: rotate(8deg);
+
     /* transition: opacity 2s ease;
     opacity: 0; */
 }
 
 .out-4.show {
     opacity: 1;
+    animation-fill-mode: forwards;
 
+
+}
+
+@keyframes runner {
+    0% {
+        transform: rotate(-5deg) scale(0.1);
+    }
+
+
+
+    100% {
+        transform: rotate(8deg) scale(1.0);
+    }
 
 }
 
 .out-5.show {
     opacity: 1;
+
 }
 
 .out-4>img {
     max-height: 300px;
     border-radius: 8%;
     border: 3px solid green;
-    transform: rotate(8deg);
+    /* transform: rotate(8deg); */
     box-shadow: 0 0 10px rgb(151, 155, 151);
 
 
