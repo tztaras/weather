@@ -77,7 +77,7 @@ async function f () {
     if (wd === 'light rain') {
         cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather)))</p>`;
     }
-    else if (wd === 'overcast clouds') {
+    else if (t>=0 && t<=5 && wd === 'overcast clouds') {
         cat.innerHTML = `<p>These clouds frighten me &#x1F408</p>`;
 
     }
@@ -89,8 +89,12 @@ async function f () {
         }
     else if (t >= -1 && t <= 4) {
         cat.innerHTML = `<p> It is getting colder, cats settle down on heaters</p><img src='./img/cat-heater.jpg'> `;
-        
     }
+    else if (t >= -6 && t <= -1) {
+        cat.innerHTML = `<p>Cold weather for running, isn't it? &#x1F408</p>`;
+    }
+        
+    
 }
 
 
