@@ -90,8 +90,11 @@ async function f () {
     else if (t >= -1 && t <= 4) {
         cat.innerHTML = `<p> It is getting colder, cats settle down on heaters</p><img src='./img/cat-heater.jpg'> `;
     }
-    else if (t >= -6 && t <= -1) {
-        cat.innerHTML = `<p>Cold weather for running, isn't it? &#x1F408</p>`;
+    else if (t >= -6 && t <= -1 && wd === 'light snow') {
+        cat.innerHTML = `<img src='./img/cat-unacceptable.jpg'><p>This is unacceptable!</p>`;
+        }
+        else if (t >= -6 && t <= -1) {
+        cat.innerHTML = `<p>It is cold for running, isn't it? &#x1F408</p>`;
     }
         
     

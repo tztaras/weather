@@ -165,10 +165,11 @@ p {
     position: absolute;
     top: 60%;
     right: 5%;
-    animation-name: runner;
+    /* animation-name: runner;
     animation-duration: 5s;
-    animation-iteration-count: 1;
-    transform: rotate(8deg);
+    animation-iteration-count: 1; */
+    /* transform: rotate(8deg); */
+    animation: runner 3s linear 0s 1 normal forwards;
 
     /* transition: opacity 2s ease;
     opacity: 0; */
@@ -176,7 +177,7 @@ p {
 
 .out-4.show {
     opacity: 1;
-    animation-fill-mode: forwards;
+    /* animation-fill-mode: forwards; */
 
 
 }
@@ -214,7 +215,7 @@ p {
 }
 
 .out-5 {
-    width: 200px;
+    width: 220px;
     /* height: 250px; */
     /* background-color: rebeccapurple; */
     margin: 0px auto;
@@ -226,7 +227,7 @@ p {
 
 .out-5>img {
 
-    max-width: 200px;
+    max-width: 220px;
     border-radius: 8%;
     border: 3px solid green;
     box-shadow: 0 0 10px rgb(151, 155, 151);
