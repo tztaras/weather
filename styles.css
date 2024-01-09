@@ -150,6 +150,7 @@ h1 {
     padding-left: 8px;
     padding-right: 8px;
     text-align: center;
+    width: fit-content;
     /* box-shadow: 0px 10px 8px -7px rgb(151, 155, 151),
         0px -10px 8px -7px rgb(151, 155, 151),
         10px 0px 8px -7px rgb(151, 155, 151); */
