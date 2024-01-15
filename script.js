@@ -94,7 +94,7 @@ async function f () {
         cat.innerHTML = `<img src='./img/cat-unacceptable.jpg'><p>This is unacceptable!</p>`;
         }
         else if (t >= -6 && t <= -1) {
-        cat.innerHTML = `<p>It is cold for running, isn't it? &#x1F408</p>`;
+        cat.innerHTML = `<p>It is cold for running, isn't it?</p><img src='./img/cat-rugsack.jpg'>`;
     }
     else if (t <= -7) {
         cat.innerHTML=`<p> I'm gonna need more fur</p> <img src='./img/cat-fur.jpg'>`
