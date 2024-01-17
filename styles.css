@@ -160,7 +160,10 @@ p {
     color: #ffffff;
     font-weight: 900;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* padding: 0 0 0 5px; */
 }
+
+
 
 .city,
 .airtemp {
@@ -252,6 +255,7 @@ p {
 .out-5>p {
     color: green;
     text-align: center;
+    padding: 0 5px 0 5px;
 }
 
 
