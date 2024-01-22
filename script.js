@@ -41,7 +41,7 @@ async function f () {
     document.querySelector('.w_icon').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
    
     document.querySelector('.w_descr').textContent = data.weather[0].description;
-    document.querySelector('.wind').textContent='wind: '+Math.round(data.wind.speed)+' m/s';
+    document.querySelector('.wind').textContent='wind: ' + Math.round(data.wind.speed) + ' m/s';
     document.querySelector('.tempfeel').innerHTML = 'feels like: ' + Math.round(data.main.feels_like) + '&deg;C';
     
     
