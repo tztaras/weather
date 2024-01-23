@@ -195,12 +195,9 @@ p {
     opacity: 0; */
 }
 
-.out-4.show {
-    opacity: 1;
-    /* animation-fill-mode: forwards; */
 
 
-}
+
 
 @keyframes runner {
     0% {
@@ -214,6 +211,7 @@ p {
     }
 
 }
+
 
 .out-5.show {
     opacity: 1;

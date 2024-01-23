@@ -1,5 +1,7 @@
 
-
+let _qw = 10;
+++_qw;
+console.log(_qw);
 
 
 
@@ -36,12 +38,11 @@ async function f () {
     document.querySelector('.city').textContent = data.name;
     document.querySelector('.airtemp').innerHTML = Math.round(data.main.temp) + '&deg;C';
    //масраунд - округление градусов, ссылка на нужную инфо + код градуса
-    // http://openweathermap.org/img/wn/04d@2x.png
-  
+
     document.querySelector('.w_icon').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
    
     document.querySelector('.w_descr').textContent = data.weather[0].description;
-    document.querySelector('.wind').textContent='wind: '+Math.round(data.wind.speed)+' m/s';
+    document.querySelector('.wind').textContent='wind: ' + Math.round(data.wind.speed) + ' m/s';
     document.querySelector('.tempfeel').innerHTML = 'feels like: ' + Math.round(data.main.feels_like) + '&deg;C';
     
     
@@ -55,14 +56,12 @@ async function f () {
     if (t > 8) {
         res.innerHTML = `<img src='./img/above8.jpg'>`;
     } 
-
     else if (t >= 5 && t <= 8 && wd === 'overcast clouds') {
         res.innerHTML = `<img src='./img/5to8brokenclouds.jpg'>`;
     }
         else if (t >= 5 && t <= 8) {
         res.innerHTML = `<img src='./img/5to8.jpg'>`;
     }
-        
     else if (t >= 0 && t <= 4) {
         res.innerHTML = `<img src='./img/0to4.jpg'>`;
     }
@@ -78,7 +77,6 @@ async function f () {
     }
     if (t>=0 && t<=5 && wd === 'overcast clouds') {
         cat.innerHTML = `<p>These clouds frighten me &#x1F408</p>`;
-
     }
     if (wd === 'clear sky' && t >= 0 && t <= 13) {
         cat.innerHTML = `<img src='./img/cat-blue-sky.jpg'> <p>Great day to watch people run</p>`;
@@ -95,7 +93,7 @@ async function f () {
         if (t >= -6 && t <= -1) {
         cat.innerHTML = `<p>It is cold for running, isn't it?</p><img src='./img/cat-rugsack.jpg'>`;
     }
-    if (t <= -7) {
+    else if (t <= -7) {
         cat.innerHTML=`<p> I'm gonna need more fur</p> <img src='./img/cat-fur.jpg'>`
     }
         
