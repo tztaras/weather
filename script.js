@@ -56,19 +56,19 @@ async function f () {
     if (t > 8) {
         res.innerHTML = `<img src='./img/above8.jpg'>`;
     } 
-    else if (t >= 5 && t <= 8 && wd === 'overcast clouds') {
+    if (t >= 5 && t <= 8 && wd === 'overcast clouds') {
         res.innerHTML = `<img src='./img/5to8brokenclouds.jpg'>`;
     }
-        else if (t >= 5 && t <= 8) {
+        if (t >= 5 && t <= 8) {
         res.innerHTML = `<img src='./img/5to8.jpg'>`;
     }
-    else if (t >= 0 && t <= 4) {
+    if (t >= 0 && t <= 4) {
         res.innerHTML = `<img src='./img/0to4.jpg'>`;
     }
-    else if (t >= -6 && t <= -1) {
+    if (t >= -6 && t <= -1) {
         res.innerHTML = `<img src='./img/-1to-6.jpg'>`;
     }
-    else if (t <= -6) {
+    if (t <= -6) {
         res.innerHTML = `<img src='./img/below-6.jpg'>`;
     }
     
@@ -93,7 +93,7 @@ async function f () {
         if (t >= -6 && t <= -1) {
         cat.innerHTML = `<p>It is cold for running, isn't it?</p><img src='./img/cat-rugsack.jpg'>`;
     }
-    else if (t <= -7) {
+    if (t <= -7) {
         cat.innerHTML=`<p> I'm gonna need more fur</p> <img src='./img/cat-fur.jpg'>`
     }
         
