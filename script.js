@@ -3,7 +3,6 @@
 
 
 
-
 document.querySelector('.button').onclick = f;
 async function f () {
   
@@ -77,26 +76,26 @@ async function f () {
     if (wd === 'light rain') {
         cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather)))</p>`;
     }
-    else if (t>=0 && t<=5 && wd === 'overcast clouds') {
+    if (t>=0 && t<=5 && wd === 'overcast clouds') {
         cat.innerHTML = `<p>These clouds frighten me &#x1F408</p>`;
 
     }
-    else if (wd === 'clear sky' && t >= 0 && t <= 13) {
+    if (wd === 'clear sky' && t >= 0 && t <= 13) {
         cat.innerHTML = `<img src='./img/cat-blue-sky.jpg'> <p>Great day to watch people run</p>`;
     }
-    else if (t >= 6 && t <= 13) {
+    if (t >= 6 && t <= 13) {
         cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Activity brings happiness)))</p>`;
         }
-    else if (t >= -1 && t <= 4) {
+    if (t >= -1 && t <= 4) {
         cat.innerHTML = `<p> It is getting colder, cats settle down on heaters</p><img src='./img/cat-heater.jpg'> `;
     }
-    else if (t >= -6 && t <= -1 && wd === 'light snow' || wd==='snow') {
+    if (t >= -6 && t <= -1 && wd === 'light snow' || wd==='snow') {
         cat.innerHTML = `<img src='./img/cat-unacceptable.jpg'><p>This is unacceptable!</p>`;
         }
-        else if (t >= -6 && t <= -1) {
+        if (t >= -6 && t <= -1) {
         cat.innerHTML = `<p>It is cold for running, isn't it?</p><img src='./img/cat-rugsack.jpg'>`;
     }
-    else if (t <= -7) {
+    if (t <= -7) {
         cat.innerHTML=`<p> I'm gonna need more fur</p> <img src='./img/cat-fur.jpg'>`
     }
         
