@@ -75,7 +75,7 @@ async function f () {
     if (wd === 'light rain') {
         cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather)))</p>`;
     }
-    if (t>=0 && t<=5 && wd === 'overcast clouds') {
+    if (t>= 0 && t<= 5 && wd === 'overcast clouds') {
         cat.innerHTML = `<p>These clouds frighten me &#x1F408</p>`;
     }
     if (wd === 'clear sky' && t >= 0 && t <= 13) {
