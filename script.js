@@ -56,12 +56,15 @@ async function f () {
     if (t > 8) {
         res.innerHTML = `<img src='./img/above8.jpg'>`;
     } 
+
     if (t >= 5 && t <= 8 && wd === 'overcast clouds') {
         res.innerHTML = `<img src='./img/5to8brokenclouds.jpg'>`;
-    }
-        if (t >= 5 && t <= 8) {
+    } else if (t >= 5 && t <= 8 && wd === 'fog') {
+        res.innerHTML = `<img src='./img/5to8-fog.jpg'>`;
+    } else if (t >= 5 && t <= 8) {
         res.innerHTML = `<img src='./img/5to8.jpg'>`;
     }
+
     if (t >= 0 && t <= 4) {
         res.innerHTML = `<img src='./img/0to4.jpg'>`;
     }
@@ -75,7 +78,7 @@ async function f () {
     if (wd === 'light rain') {
         cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather)))</p>`;
     }
-    if (t>= 0 && t<= 5 && wd === 'overcast clouds') {
+    if (t >= 0 && t <= 5 && wd === 'overcast clouds') {
         cat.innerHTML = `<p>These clouds frighten me &#x1F408</p>`;
     }
     if (wd === 'clear sky' && t >= 0 && t <= 13) {
@@ -87,12 +90,13 @@ async function f () {
     if (t >= -1 && t <= 4) {
         cat.innerHTML = `<p> It is getting colder, cats settle down on heaters</p><img src='./img/cat-heater.jpg'> `;
     }
+
     if (t >= -6 && t <= -1 && wd === 'light snow' || wd==='snow') {
         cat.innerHTML = `<img src='./img/cat-unacceptable.jpg'><p>This is unacceptable!</p>`;
-        }
-        if (t >= -6 && t <= -1) {
+        } else if (t >= -6 && t <= -1) {
         cat.innerHTML = `<p>It is cold for running, isn't it?</p><img src='./img/cat-rugsack.jpg'>`;
     }
+    
     if (t <= -7) {
         cat.innerHTML=`<p> I'm gonna need more fur</p> <img src='./img/cat-fur.jpg'>`
     }
