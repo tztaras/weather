@@ -1,9 +1,4 @@
 
-let _qw = 10;
-++_qw;
-console.log(_qw);
-
-
 
 document.querySelector('.button').onclick = f;
 async function f () {
@@ -50,8 +45,6 @@ async function f () {
     let t = Math.round(data.main.temp);
     let wd = data.weather[0].description;
     
-    
-
     // t
     // t
     // t
@@ -79,18 +72,19 @@ async function f () {
     // wd
     // wd
     // wd
-    if (wd === 'light rain') {
-        cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather)))</p>`;
-    }
     if (t >= 0 && t <= 5 && wd === 'overcast clouds') {
         cat.innerHTML = `<p>These clouds frighten me &#x1F408</p>`;
     }
     if (wd === 'clear sky' && t >= 0 && t <= 13) {
         cat.innerHTML = `<img src='./img/cat-blue-sky.jpg'> <p>Great day to watch people run</p>`;
     }
+
     if (t >= 6 && t <= 13) {
-        cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Activity brings happiness)))</p>`;
+        if (wd === 'light rain' || wd === 'rain') {
+            cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather &#128568 </p>`;
         }
+        else { cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Activity brings happiness &#128568</p>`; }
+    }
     if (t >= -1 && t <= 4) {
         cat.innerHTML = `<p> It is getting colder, cats settle down on heaters</p><img src='./img/cat-heater.jpg'> `;
     }
