@@ -37,7 +37,7 @@ async function f () {
 
     document.querySelector('.city').textContent = data.name;
     document.querySelector('.airtemp').innerHTML = Math.round(data.main.temp) + '&deg;C';
-   //масраунд - округление градусов, ссылка на нужную инфо + код градуса
+   
 
     document.querySelector('.w_icon').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
    
@@ -49,10 +49,12 @@ async function f () {
    
     let t = Math.round(data.main.temp);
     let wd = data.weather[0].description;
-    // let wind = Math.round(data.wind.speed);
+    
     
 
-
+    // t
+    // t
+    // t
     if (t > 8) {
         res.innerHTML = `<img src='./img/above8.jpg'>`;
     } 
@@ -74,7 +76,9 @@ async function f () {
     if (t <= -6) {
         res.innerHTML = `<img src='./img/below-6.jpg'>`;
     }
-    
+    // wd
+    // wd
+    // wd
     if (wd === 'light rain') {
         cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather)))</p>`;
     }
@@ -107,29 +111,4 @@ async function f () {
 
 
 
-// let res = document.querySelector('.airtemp');
 
-    
-
-
-
-
-
-
-
-// ===================
-//   fetch('https://api.openweathermap.org/data/2.5/weather?id=687021&appid=d41328ff78cb8042706bf7398821ba7d&temp=cel&units=metric')
-// .then(function (resp) { return resp.json() }) //convert data to json
-// .then(function (data) {
-// console.log(data);
-//     document.querySelector('.city').textContent = data.name;
-   
-//     document.querySelector('.airtemp').innerHTML = Math.round(data.main.temp) + '&deg;C';
-//    //масраунд - округление градусов, ссылка на нужную инфо + код градуса
-//     // http://openweathermap.org/img/wn/04d@2x.png
-  
-//     document.querySelector('.w_icon').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
-   
-//     document.querySelector('.w_descr').textContent = data.weather[0].description;
-//     document.querySelector('.wind').textContent='wind: '+Math.round(data.wind.speed)+' m/s';
-//     document.querySelector('.tempfeel').innerHTML='feels like: '+Math.round(data.main.feels_like) + '&deg;C';
