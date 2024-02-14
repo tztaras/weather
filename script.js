@@ -1,7 +1,7 @@
 
 
 document.querySelector('.button').onclick = f;
-async function f () {
+async function f() {
   
   
 
@@ -18,7 +18,7 @@ async function f () {
 
 
     setTimeout(() => {
-            cat.classList.toggle('show');
+        cat.classList.toggle('show');
     
     }, 500)
     
@@ -37,7 +37,7 @@ async function f () {
     document.querySelector('.w_icon').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
    
     document.querySelector('.w_descr').textContent = data.weather[0].description;
-    document.querySelector('.wind').textContent='wind: ' + Math.round(data.wind.speed) + ' m/s';
+    document.querySelector('.wind').textContent = 'wind: ' + Math.round(data.wind.speed) + ' m/s';
     document.querySelector('.tempfeel').innerHTML = 'feels like: ' + Math.round(data.main.feels_like) + '&deg;C';
     
     
@@ -50,7 +50,7 @@ async function f () {
     // t
     if (t > 8) {
         res.innerHTML = `<img src='./img/above8.jpg'>`;
-    } 
+    }
 
     if (t >= 5 && t <= 8 && wd === 'overcast clouds') {
         res.innerHTML = `<img src='./img/5to8brokenclouds.jpg'>`;
@@ -82,8 +82,7 @@ async function f () {
     if (t >= 6 && t <= 13) {
         if (wd === 'light rain' || wd === 'rain') {
             cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather &#128568 </p>`;
-        }
-        else { cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Activity brings happiness &#128568</p>`; }
+        } else { cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Activity brings happiness &#128568</p>`; }
     }
     if (t >= -1 && t <= 4) {
         cat.innerHTML = `<p> It is getting colder, cats settle down on heaters</p><img src='./img/cat-heater.jpg'> `;
