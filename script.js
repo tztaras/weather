@@ -48,7 +48,7 @@ async function f() {
     // t
     // t
     // t
-    if (t > 8) {
+    if (t > 9) {
         res.innerHTML = `<img src='./img/above8.jpg'>`;
     }
 
