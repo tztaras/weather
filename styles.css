@@ -1,15 +1,7 @@
 body {
-    /* background: rgb(223, 255, 251); */
     background: linear-gradient(5deg, rgb(190, 221, 193) 30%, rgb(223, 255, 251) 100%);
-    /* border-radius: 8%; */
     background-repeat: no-repeat;
-    height: 1000px;
-    max-height: min-content;
-
-
-
-
-
+    height: 100vh;
 }
 
 h1 {
