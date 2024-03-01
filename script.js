@@ -5,9 +5,9 @@ async function f() {
   
   
 
-    let res = document.querySelector('.out-4');
-    let cat = document.querySelector('.out-5');
-   
+    
+    let cat = document.querySelector('.out-4');
+    let res = document.querySelector('.out-5');
     
     let a = document.querySelectorAll('.container, .out-4, .out-5');
     a.forEach(aa => {
