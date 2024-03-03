@@ -133,7 +133,7 @@ p {
     right: 5%; */
     position: relative;
     left: 35%;
-    bottom: 40%;
+    bottom: 25%;
     animation: runner 3s linear 0s 1 normal forwards;
 }
 
