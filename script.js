@@ -76,7 +76,7 @@ async function f() {
 
     let adv = document.createElement('p');
     res.appendChild(adv);
-    adv.textContent = 'lorem2342342342';
+    adv.textContent = 'Going for a run? Dress like this';
 
   
 
