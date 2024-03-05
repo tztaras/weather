@@ -9,6 +9,7 @@ async function f() {
     let cat = document.querySelector('.out-4');
     let res = document.querySelector('.out-5');
     
+    
     let a = document.querySelectorAll('.container, .out-4, .out-5');
     a.forEach(aa => {
         
@@ -44,31 +45,42 @@ async function f() {
    
     let t = Math.round(data.main.temp);
     let wd = data.weather[0].description;
+
+    
     
     // t
     // t
     // t
+    res.innerHTML = '';
     if (t > 9) {
         res.innerHTML = `<img src='./img/above8.jpg'>`;
     }
 
     if (t >= 5 && t <= 8 && wd === 'overcast clouds') {
-        res.innerHTML = `<img src='./img/5to8brokenclouds.jpg'>`;
+        res.innerHTML += `<img src='./img/5to8brokenclouds.jpg'>`;
     } else if (t >= 5 && t <= 8 && wd === 'fog') {
-        res.innerHTML = `<img src='./img/5to8-fog.jpg'>`;
+        res.innerHTML += `<img src='./img/5to8-fog.jpg'>`;
     } else if (t >= 5 && t <= 8) {
-        res.innerHTML = `<img src='./img/5to8.jpg'>`;
+        res.innerHTML += `<img src='./img/5to8.jpg'>`;
     }
 
     if (t >= 0 && t <= 4) {
-        res.innerHTML = `<img src='./img/0to4.jpg'>`;
+        res.innerHTML += `<img src='./img/0to4.jpg'>`;
     }
     if (t >= -6 && t <= -1) {
-        res.innerHTML = `<img src='./img/-1to-6.jpg'>`;
+        res.innerHTML += `<img src='./img/-1to-6.jpg'>`;
     }
     if (t <= -6) {
-        res.innerHTML = `<img src='./img/below-6.jpg'>`;
+        res.innerHTML += `<img src='./img/below-6.jpg'>`;
     }
+
+    let adv = document.createElement('p');
+    res.appendChild(adv);
+    adv.textContent = 'lorem2342342342';
+
+  
+
+
     // wd
     // wd
     // wd
