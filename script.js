@@ -64,8 +64,7 @@ async function f() {
     ad_arr.style.height = '33px';
     ad_arr.style.bottom = '-43px';
     ad_arr.style.right = '-3px';
-    // adv.innerHTML += `<img src='./img/arrow.png' style='position: relative; bottom:-18px'>`;
-    // <img src='./img/arrow.png' style='position: relative; bottom:-18px'></img>
+    
 
     if (t > 9) {
         res.innerHTML = `<img src='./img/above8.jpg'>`;
