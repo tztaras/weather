@@ -54,7 +54,7 @@ async function f() {
     res.innerHTML = '';
     let adv = document.createElement('p');
     res.appendChild(adv);
-    adv.innerHTML = 'Going for a run? <br>Consider dressing like this &#x1F408';
+    adv.innerHTML = `Going for a run? <br>Consider dressing like this <img src='./img/arrow.png' style='position: relative; bottom:-18px';>`;
     
 
     if (t > 9) {
