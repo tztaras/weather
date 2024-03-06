@@ -52,6 +52,11 @@ async function f() {
     // t
     // t
     res.innerHTML = '';
+    let adv = document.createElement('p');
+    res.appendChild(adv);
+    adv.innerHTML = 'Going for a run? <br>Consider dressing like this &#x1F408';
+    
+
     if (t > 9) {
         res.innerHTML = `<img src='./img/above8.jpg'>`;
     }
@@ -74,9 +79,7 @@ async function f() {
         res.innerHTML += `<img src='./img/below-6.jpg'>`;
     }
 
-    let adv = document.createElement('p');
-    res.appendChild(adv);
-    adv.textContent = 'Going for a run? Dress like this';
+    
 
   
 
