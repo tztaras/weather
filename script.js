@@ -52,10 +52,20 @@ async function f() {
     // t
     // t
     res.innerHTML = '';
-    let adv = document.createElement('p');
+    let adv = document.createElement('div');
     res.appendChild(adv);
-    adv.innerHTML = `Going for a run? <br>Consider dressing like this <img src='./img/arrow.png' style='position: relative; bottom:-18px';>`;
-    
+    adv.style.display = 'flex';
+    adv.style.flexDirection = 'row';
+    adv.innerHTML = `<p>Going for a run? <br>Consider dressing like this </p>`;
+    let ad_arr = document.createElement('img');
+    adv.appendChild(ad_arr);
+    ad_arr.src = './img/arrow.png';
+    ad_arr.style.position = 'relative';
+    ad_arr.style.height = '33px';
+    ad_arr.style.bottom = '-43px';
+    ad_arr.style.right = '-3px';
+    // adv.innerHTML += `<img src='./img/arrow.png' style='position: relative; bottom:-18px'>`;
+    // <img src='./img/arrow.png' style='position: relative; bottom:-18px'></img>
 
     if (t > 9) {
         res.innerHTML = `<img src='./img/above8.jpg'>`;
