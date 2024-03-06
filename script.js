@@ -109,7 +109,7 @@ async function f() {
         } else { cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Activity brings happiness &#128568</p>`; }
     }
     if (t >= -1 && t <= 4) {
-        cat.innerHTML = `<p> It is getting colder, cats settle down on heaters</p><img src='./img/cat-heater.jpg'> `;
+        cat.innerHTML = `<p>It is getting colder, cats settle down on heaters</p><img src='./img/cat-heater.jpg'> `;
     }
 
     if (t >= -6 && t <= -1 && wd === 'light snow' || wd==='snow') {
