@@ -1,31 +1,20 @@
 
-
 document.querySelector('.button').onclick = f;
+
 async function f() {
   
-  
-
-    
     let cat = document.querySelector('.out-4');
     let res = document.querySelector('.out-5');
     
-    
     let a = document.querySelectorAll('.container, .out-4, .out-5');
     a.forEach(aa => {
-        
         aa.classList.toggle('hide');
-        
     })
-
 
     setTimeout(() => {
         cat.classList.toggle('show');
-    
     }, 500)
     
-    
-    
-
     let b = await fetch('https://api.openweathermap.org/data/2.5/weather?id=687021&appid=d41328ff78cb8042706bf7398821ba7d&temp=cel&units=metric');
     console.log(b);
     let data = await b.json();
@@ -34,7 +23,6 @@ async function f() {
     document.querySelector('.city').textContent = data.name;
     document.querySelector('.airtemp').innerHTML = Math.round(data.main.temp) + '&deg;C';
    
-
     document.querySelector('.w_icon').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
    
     document.querySelector('.w_descr').textContent = data.weather[0].description;
@@ -42,13 +30,9 @@ async function f() {
     document.querySelector('.tempfeel').innerHTML = 'feels like: ' + Math.round(data.main.feels_like) + '&deg;C';
     
     
-   
     let t = Math.round(data.main.temp);
     let wd = data.weather[0].description;
 
-    
-    
-    // t
     // t
     // t
     res.innerHTML = '';
@@ -88,12 +72,6 @@ async function f() {
         res.innerHTML += `<img src='./img/below-6.jpg'>`;
     }
 
-    
-
-  
-
-
-    // wd
     // wd
     // wd
     if (t >= 0 && t <= 5 && wd === 'overcast clouds') {
