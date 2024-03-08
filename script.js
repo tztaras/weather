@@ -13,7 +13,7 @@ async function f() {
 
     setTimeout(() => {
         cat.classList.toggle('show');
-    }, 500)
+    }, 500);
     
     let b = await fetch('https://api.openweathermap.org/data/2.5/weather?id=687021&appid=d41328ff78cb8042706bf7398821ba7d&temp=cel&units=metric');
     console.log(b);
@@ -97,7 +97,7 @@ async function f() {
     }
     
     if (t <= -7) {
-        cat.innerHTML=`<p> I'm gonna need more fur</p> <img src='./img/cat-fur.jpg'>`
+        cat.innerHTML = `<p> I'm gonna need more fur</p> <img src='./img/cat-fur.jpg'>`;
     }
         
     
