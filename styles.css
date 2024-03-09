@@ -167,7 +167,7 @@ p {
     margin-top: 11px;
     max-height: 280px;
     border-radius: 8%;
-    border: 3px solid green;
+    border: 2px solid green;
     box-shadow: 0 0 10px rgb(151, 155, 151);
 }
 
@@ -185,7 +185,7 @@ p {
 
     max-width: 220px;
     border-radius: 8%;
-    border: 3px solid green;
+    border: 2px solid green;
     box-shadow: 0 0 10px rgb(151, 155, 151);
 
 }
