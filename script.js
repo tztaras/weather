@@ -81,7 +81,7 @@ async function f() {
         cat.innerHTML = `<img src='./img/cat-blue-sky.jpg'> <p>Great day to watch people run</p>`;
     }
 
-    if (t >= 6 && t <= 13) {
+    if (t >= 5 && t <= 13) {
         if (wd === 'light rain' || wd === 'rain') {
             cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather &#128568 </p>`;
         } else { cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Activity brings happiness &#128568</p>`; }
