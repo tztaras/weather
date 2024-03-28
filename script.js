@@ -51,7 +51,7 @@ async function f() {
     
 
     if (t > 9) {
-        res.innerHTML = `<img src='./img/above8.jpg'>`;
+        res.innerHTML += `<img src='./img/above8.jpg'>`;
     }
 
     if (t >= 5 && t <= 8 && wd === 'overcast clouds') {
