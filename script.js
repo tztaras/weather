@@ -50,7 +50,7 @@ async function f() {
     ad_arr.style.right = '-3px';
     
 
-    if (t > 9) {
+    if (t > 8) {
         res.innerHTML += `<img src='./img/above8.jpg'>`;
     }
 
@@ -81,11 +81,20 @@ async function f() {
         cat.innerHTML = `<img src='./img/cat-blue-sky.jpg'> <p>Great day to watch people run</p>`;
     }
 
+    // if (t >= 5 && t <= 13) {
+    //     if (wd === 'light rain' || wd === 'rain' || wd === 'moderate rain' || wd === 'high intensity rain') {
+    //         cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather &#128568 </p>`;
+    //     } else { cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Activity brings happiness &#128568</p>`; }
+    // }
+
     if (t >= 5 && t <= 13) {
-        if (wd === 'light rain' || wd === 'rain' || wd === 'moderate rain' || 'high intensity rain') {
-            cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather &#128568 </p>`;
-        } else { cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Activity brings happiness &#128568</p>`; }
+        const message = (wd === 'light rain' || wd === 'rain' || wd === 'moderate rain' || wd === 'high intensity rain') ?
+            "Can you imagine: people run in this weather &#128568" :
+            "Activity brings happiness &#128568";
+        
+        cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>${message}</p>`;
     }
+
     if (t >= -1 && t <= 4) {
         cat.innerHTML = `<p>It is getting colder, cats settle down on heaters</p><img src='./img/cat-heater.jpg'> `;
     }
