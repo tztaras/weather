@@ -82,7 +82,7 @@ async function f() {
     }
 
     if (t >= 5 && t <= 13) {
-        if (wd === 'light rain' || wd === 'rain') {
+        if (wd === 'light rain' || wd === 'rain' || wd === 'moderate rain' || 'high intensity rain') {
             cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Can you imagine: people run in this weather &#128568 </p>`;
         } else { cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Activity brings happiness &#128568</p>`; }
     }
@@ -90,7 +90,7 @@ async function f() {
         cat.innerHTML = `<p>It is getting colder, cats settle down on heaters</p><img src='./img/cat-heater.jpg'> `;
     }
 
-    if (t >= -6 && t <= -1 && wd === 'light snow' || wd==='snow') {
+    if (t >= -6 && t <= -1 && wd === 'light snow' || wd ==='snow') {
         cat.innerHTML = `<img src='./img/cat-unacceptable.jpg'><p>This is unacceptable!</p>`;
         } else if (t >= -6 && t <= -1) {
         cat.innerHTML = `<p>It is cold for running, isn't it?</p><img src='./img/cat-rugsack.jpg'>`;
