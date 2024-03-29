@@ -50,9 +50,17 @@ async function f() {
     ad_arr.style.right = '-3px';
     
 
+    // if (t > 8) {
+    //     res.innerHTML += `<img src='./img/above8.jpg'>`;
+    // }
     if (t > 8) {
-        res.innerHTML += `<img src='./img/above8.jpg'>`;
+        const runner = (wd === 'light rain' || wd === 'rain' || wd === 'moderate rain' || wd === 'high intensity rain') ?
+            "./img/above8-rain.jpg" :
+            "./img/above8.jpg"
+        res.innerHTML += `<img src='${runner}'>`;
     }
+
+
 
     if (t >= 5 && t <= 8 && wd === 'overcast clouds') {
         res.innerHTML += `<img src='./img/5to8brokenclouds.jpg'>`;
