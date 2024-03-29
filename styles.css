@@ -114,6 +114,10 @@ h1 {
 
 }
 
+.out-3>p:first-child {
+    margin-top: 2px;
+}
+
 p {
     color: #ffffff;
     font-weight: 900;
