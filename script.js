@@ -95,7 +95,7 @@ async function f() {
     //     } else { cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Activity brings happiness &#128568</p>`; }
     // }
 
-    if (t >= 5 && t <= 13) {
+    if (t >= 5 && t <= 19) {
         const message = (wd === 'light rain' || wd === 'rain' || wd === 'moderate rain' || wd === 'high intensity rain') ?
             "Can you imagine: people run in this weather &#128568" :
             "Activity brings happiness &#128568";
