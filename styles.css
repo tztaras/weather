@@ -6,7 +6,9 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     max-height: fit-content;
+    min-height: 730px;
     font-family: 'sintony', sans-serif;
+    background-size: cover;
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
@@ -165,6 +167,7 @@ p {
     left: 35%;
     bottom: 25%;
     animation: runner 3s linear 0s 1 normal forwards;
+    background-size: cover;
 }
 
 
