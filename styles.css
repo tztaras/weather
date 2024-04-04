@@ -1,17 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap');
+
+
 body {
     background: linear-gradient(5deg, rgb(190, 221, 193) 30%, rgb(223, 255, 251) 100%);
     background-repeat: no-repeat;
     height: 100vh;
     max-height: fit-content;
+    font-family: 'sintony', sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
 h1 {
     margin-top: 70px;
     text-align: center;
     justify-content: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-shadow: 1px 1px 1px grey;
-    color: rgba(12, 105, 12, 0.849)
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.322);
+    /* color: rgba(16, 133, 16, 0.849); */
+    color: rgb(58, 150, 5)
 }
 
 .button {
@@ -26,8 +32,9 @@ h1 {
     height: 30px;
     width: 70px;
     color: #ffffff;
+    font-family: 'sintony', sans-serif;
     font-weight: 900;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .button:hover {
@@ -98,6 +105,10 @@ h1 {
 
 }
 
+.out-1>p:first-child {
+    margin-top: 13px;
+}
+
 .out-3 {
     display: flex;
     flex-direction: column;
@@ -129,7 +140,7 @@ h1 {
 p {
     color: #ffffff;
     font-weight: 900;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
 
