@@ -82,12 +82,7 @@ async function f() {
 
     // wd
     // wd
-    if (t >= 0 && t <= 5 && wd === 'overcast clouds') {
-        cat.innerHTML = `<p>These clouds frighten me &#x1F408</p>`;
-    }
-    if (wd === 'clear sky' && t >= 0 && t <= 13) {
-        cat.innerHTML = `<img src='./img/cat-blue-sky.jpg'> <p>Great day to watch people run</p>`;
-    }
+    
 
     // if (t >= 5 && t <= 13) {
     //     if (wd === 'light rain' || wd === 'rain' || wd === 'moderate rain' || wd === 'high intensity rain') {
@@ -95,12 +90,23 @@ async function f() {
     //     } else { cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>Activity brings happiness &#128568</p>`; }
     // }
 
+    if (t > 19) {
+        cat.innerHTML = `<p> I'm gonna need less fur</p> <img src='./img/cat-fur.jpg'>`
+    }
+
     if (t >= 5 && t <= 19) {
         const message = (wd === 'light rain' || wd === 'rain' || wd === 'moderate rain' || wd === 'high intensity rain') ?
             "Can you imagine: people run in this weather &#128568" :
             "Activity brings happiness &#128568";
         
         cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>${message}</p>`;
+    }
+
+     if (t >= 0 && t <= 5 && wd === 'overcast clouds') {
+        cat.innerHTML = `<p>These clouds frighten me &#x1F408</p>`;
+    }
+    if (wd === 'clear sky' && t >= 0 && t <= 13) {
+        cat.innerHTML = `<img src='./img/cat-blue-sky.jpg'> <p>Great day to watch people run</p>`;
     }
 
     if (t >= -1 && t <= 4) {
