@@ -102,7 +102,7 @@ async function f() {
         cat.innerHTML = `<img src='./img/cat-smiles.jpg'> <p>${message}</p>`;
     }
 
-     if (t >= 0 && t <= 5 && wd === 'overcast clouds') {
+    if (t >= 0 && t <= 5 && wd === 'overcast clouds') {
         cat.innerHTML = `<p>These clouds frighten me &#x1F408</p>`;
     }
     if (wd === 'clear sky' && t >= 0 && t <= 13) {
@@ -113,10 +113,20 @@ async function f() {
         cat.innerHTML = `<p>It is getting colder, cats settle down on heaters</p><img src='./img/cat-heater.jpg'> `;
     }
 
-    if (t >= -6 && t <= -1 && wd === 'light snow' || wd ==='snow') {
-        cat.innerHTML = `<img src='./img/cat-unacceptable.jpg'><p>This is unacceptable!</p>`;
-        } else if (t >= -6 && t <= -1) {
-        cat.innerHTML = `<p>It is cold for running, isn't it?</p><img src='./img/cat-rugsack.jpg'>`;
+    // if (t >= -6 && t <= -1 && wd === 'light snow' || wd ==='snow') {
+    //     cat.innerHTML = `<img src='./img/cat-unacceptable.jpg'><p>This is unacceptable!</p>`;
+    //     } else if (t >= -6 && t <= -1) {
+    //     cat.innerHTML = `<p>It is cold for running, isn't it?</p><img src='./img/cat-rugsack.jpg'>`;
+    // }
+
+    // both approaches are valid, but you may prefer the first one for its readability and maintainability, especially as your code grows.
+
+    if (t >= -6 && t <= -1) {
+        const snowReaction = (wd === 'light snow' || wd === 'snow') ?
+            `<img src='./img/cat-unacceptable.jpg'><p>This is unacceptable!</p>` :
+            `<p>It is cold for running, isn't it?</p><img src='./img/cat-rugsack.jpg'>`;
+
+        cat.innerHTML = `${ snowReaction }`;
     }
     
     if (t <= -7) {
