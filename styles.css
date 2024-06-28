@@ -27,7 +27,7 @@ h1 {
 
     border-radius: 5px;
     border: 1px solid green;
-    box-shadow: 0 0 5px rgb(151, 155, 151);
+    box-shadow: 0 0 8px rgb(182, 185, 182);
     height: 30px;
     width: 70px;
     color: #ffffff;
@@ -52,7 +52,7 @@ h1 {
     align-items: center;
     flex-direction: row;
     margin-top: 13px;
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0 0 10px rgb(182, 185, 182);
     max-width: fit-content;
     border-radius: 8%;
 
@@ -87,7 +87,6 @@ h1 {
 
 
 .out-1 {
-
     border-top-left-radius: 8%;
     border-bottom-left-radius: 8%;
     border-left: 2px solid green;
@@ -175,7 +174,7 @@ p {
     max-height: 280px;
     border-radius: 8%;
     border: 2px solid green;
-    box-shadow: 0 0 10px rgb(151, 155, 151);
+    box-shadow: 0 0 10px rgb(182, 185, 182);
 }
 
 .out-4 {
@@ -193,7 +192,7 @@ p {
     max-width: 220px;
     border-radius: 8%;
     border: 2px solid green;
-    box-shadow: 0 0 10px rgb(151, 155, 151);
+    box-shadow: 0 0 10px rgb(182, 185, 182);
 
 }
 
