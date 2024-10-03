@@ -246,7 +246,7 @@ p {
 
     body {
         height: 1050px;
-        max-height: fit-content;
+        /* max-height: fit-content; */
     }
 
     h1 {
